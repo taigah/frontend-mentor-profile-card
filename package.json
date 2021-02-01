@@ -1,0 +1,22 @@
+{
+  "name": "profile-card",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx parcel src/index.html",
+    "build": "npx parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GPL",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "postcss-font-magician": "^2.3.1",
+    "postcss-nested": "^4.2.3"
+  },
+  "dependencies": {
+    "tailwindcss": "^1.9.6"
+  }
+}

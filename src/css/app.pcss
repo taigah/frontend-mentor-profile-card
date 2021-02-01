@@ -1,0 +1,63 @@
+@tailwind base;
+
+html {
+  height: 100%;
+}
+
+body {
+  @apply bg-dark-cyan font-normal h-full flex content-center items-center justify-center;
+}
+
+.card {
+  @apply bg-white text-dark-grayish-blue mx-auto rounded-xl shadow-xl bg-no-repeat bg-contain;
+  background-image: url('../images/bg-pattern-card.svg');
+  width: 20.625rem;
+  padding-top: 5.4375rem;
+  font-size: 1.125rem;
+
+  &__main {
+    @apply flex flex-col items-center;
+  }
+
+  &__picture {
+    @apply overflow-hidden inline-block rounded-full bg-white;
+    padding: 0.3125rem;
+    margin-bottom: 1.1875rem;
+    img {
+      @apply overflow-hidden rounded-full;
+      width: 6.0625rem;
+      height: 6.0625rem;
+    }
+  }
+
+  &__name {
+    @apply font-bold text-very-dark-desaturated-blue;
+    margin-right: .25rem;
+  }
+
+  &__city {
+    font-size: .75em;
+    margin-bottom: 1.5625rem;
+  }
+
+  &__bottom {
+    @apply border-t border-light-gray flex justify-between text-center;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1.5625rem;
+    padding-bottom: 1.875rem;
+  }
+  
+  &__amount {
+    @apply font-bold text-very-dark-desaturated-blue;
+    margin-bottom: 0.1875rem;
+  }
+
+  &__label {
+    font-size: .6em;
+    letter-spacing: .125rem;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
